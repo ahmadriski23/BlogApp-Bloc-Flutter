@@ -22,12 +22,12 @@ class _OnBoardState extends State<OnBoard> {
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             Image.asset(
-              'assets/images/logoFinanceRemove.png',
+              MyAssets.mainLogo,
               color: MyColors.primaryColor,
-              height: 100,
-              width: 500,
+              height: 150.h,
+              width: 500.w,
             ),
-            63.heightBox,
+            63.h.heightBox,
             PageView(
               controller: onBoardViewModel.pageController,
               children: [
@@ -36,22 +36,22 @@ class _OnBoardState extends State<OnBoard> {
                 OnBoardThird(),
               ],
             ).expand(),
-            61.heightBox,
+            61.h.heightBox,
             ElevatedButton(
                 style: ElevatedButton.styleFrom(
                     backgroundColor: MyColors.primaryColor,
-                    minimumSize: Size(MediaQuery.of(context).size.width, 44),
+                    minimumSize: Size(MediaQuery.of(context).size.width, 44.h),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(11),
+                      borderRadius: BorderRadius.circular(11.r),
                     )),
-                onPressed: () {},
+                onPressed: () => AutoRouter.of(context).push(AuthRoute()),
                 child: "Get Started"
                     .text
-                    .size(16)
+                    .size(16.sp)
                     .fontWeight(FontWeight.w700)
                     .make()),
             SizedBox(
-              height: 61,
+              height: 61.h,
             ),
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
@@ -59,7 +59,7 @@ class _OnBoardState extends State<OnBoard> {
                 "Skip"
                     .text
                     .color(MyColors.primaryColor)
-                    .size(16)
+                    .size(16.sp)
                     .textStyle(GoogleFonts.poppins())
                     .fontWeight(FontWeight.w700)
                     .make(),
@@ -76,7 +76,7 @@ class _OnBoardState extends State<OnBoard> {
                 "Next"
                     .text
                     .color(MyColors.primaryColor)
-                    .size(16)
+                    .size(16.sp)
                     .fontWeight(FontWeight.w700)
                     .make()
               ],

@@ -10,10 +10,10 @@ class OnBoardSecond extends StatelessWidget {
     return Column(
       children: [
         Image.asset("assets/images/logoFinanceRemove.png",
-            height: 333, width: 333),
+            height: 333.h, width: 333.w),
         "Lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
             .text
-            .size(15)
+            .size(15.sp)
             .align(TextAlign.center)
             .fontWeight(FontWeight.w500)
             .make()

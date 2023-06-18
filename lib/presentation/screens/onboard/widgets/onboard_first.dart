@@ -11,12 +11,12 @@ class OnBoardFirst extends StatelessWidget {
       children: [
         Image.asset(
           "assets/images/logoFinanceRemove.png",
-          height: 333,
-          width: 333,
+          height: 333.h,
+          width: 333.w,
         ),
         "Lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
             .text
-            .size(15)
+            .size(15.sp)
             .align(TextAlign.center)
             .textStyle(GoogleFonts.poppins())
             .fontWeight(FontWeight.w500)
