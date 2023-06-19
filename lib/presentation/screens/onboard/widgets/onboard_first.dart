@@ -10,11 +10,11 @@ class OnBoardFirst extends StatelessWidget {
     return Column(
       children: [
         Image.asset(
-          "assets/images/logoFinanceRemove.png",
+          MyAssets.boardImage1,
           height: 333.h,
           width: 333.w,
         ),
-        "Lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+        "Discover, engage and read the latest articles oras well as share your own thoughts and ideas with the community"
             .text
             .size(15.sp)
             .align(TextAlign.center)

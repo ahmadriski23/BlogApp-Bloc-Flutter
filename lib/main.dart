@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
         useInheritedMediaQuery: true,
         builder: (context, child) {
           return MaterialApp.router(
+            debugShowCheckedModeBanner: false,
             title: MyStrings.appName,
             theme: AppThemes.light,
             darkTheme: AppThemes.dark,
@@ -34,5 +35,3 @@ class MyApp extends StatelessWidget {
         });
   }
 }
-
-HomePage() {}

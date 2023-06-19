@@ -9,9 +9,8 @@ class OnBoardSecond extends StatelessWidget {
   Widget build(BuildContext context) {
     return Column(
       children: [
-        Image.asset("assets/images/logoFinanceRemove.png",
-            height: 333.h, width: 333.w),
-        "Lorem ipsum, lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum lorem ipsum"
+        Image.asset(MyAssets.boardImage2, height: 333.h, width: 333.w),
+        "Customize your reading experience and join the conversation by creating an account."
             .text
             .size(15.sp)
             .align(TextAlign.center)

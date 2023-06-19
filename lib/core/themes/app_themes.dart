@@ -14,7 +14,8 @@ class AppThemes {
 
   static final dark = ThemeData(
     primarySwatch: Colors.blue,
-    colorScheme: ColorScheme.fromSeed(seedColor: MyColors.secondaryColor),
+    colorScheme:
+        ColorScheme.fromSeed(seedColor: Color.fromARGB(207, 17, 9, 102)),
     useMaterial3: true,
     fontFamily: GoogleFonts.poppins().fontFamily,
   );

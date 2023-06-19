@@ -27,7 +27,7 @@ class _SplashState extends State<Splash> {
       backgroundColor: MyColors.primaryColor,
       body: Center(
         child: FadedScaleAnimation(
-          child: Image.asset(MyAssets.mainLogo, height: 100.h, width: 500.w),
+          child: Image.asset(MyAssets.mainLogo, height: 150.h, width: 250.w),
         ),
       ),
     );

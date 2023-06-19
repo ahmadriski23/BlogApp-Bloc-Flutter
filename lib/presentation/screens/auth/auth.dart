@@ -18,18 +18,31 @@ class _AuthState extends State<Auth> {
         ),
       ),
       child: Scaffold(
+        appBar: AppBar(
+          centerTitle: true,
+          backgroundColor: Colors.transparent,
+          leading: GestureDetector(
+            onTap: () {
+              Navigator.pop(context);
+            },
+            child: Icon(
+              Icons.arrow_back_ios_new,
+              color: MyColors.whiteColor,
+            ),
+          ),
+          title: Image.asset(
+            MyAssets.mainLogo,
+            height: 125.h,
+            width: 250.w,
+          ),
+        ),
         backgroundColor: Colors.transparent,
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(horizontal: 24.0.h),
+            padding: EdgeInsets.symmetric(horizontal: 24.0.h, vertical: 24.w),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                Image.asset(
-                  MyAssets.mainLogo,
-                  height: 150.h,
-                  width: 500.w,
-                ).centered(),
                 Spacer(),
                 "Explore the world,\nBillions of Thoughts"
                     .text
@@ -51,6 +64,7 @@ class _AuthState extends State<Auth> {
                     child: "Login"
                         .text
                         .size(16.sp)
+                        .white
                         .fontWeight(FontWeight.w700)
                         .make()),
                 12.h.heightBox,
@@ -67,6 +81,7 @@ class _AuthState extends State<Auth> {
                     child: "Register"
                         .text
                         .size(16.sp)
+                        .white
                         .fontWeight(FontWeight.w700)
                         .make()),
               ],
